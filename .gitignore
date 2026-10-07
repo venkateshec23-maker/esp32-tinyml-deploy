@@ -1,0 +1,15 @@
+# Build + generated artifacts (reproduce via docs/, never commit binaries)
+*.bin
+*.elf
+*.map
+build/
+generated/
+__pycache__/
+*.pyc
+.pytest_cache/
+# Arduino
+*.hex
+# OS / editor
+Thumbs.db
+Desktop.ini
+.vscode/
