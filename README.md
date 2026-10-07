@@ -5,8 +5,10 @@ logistic/linear regression (closing upstream emlearn issue #56) plus a real
 ESP32 DevKit deployment — DHT comfort classifier with measured
 flash/RAM/latency.
 
-> **Status:** P2 in progress. Nothing claimed until `reports/` holds parity
-> logs and on-device measurements.
+> **Status (host-complete 2026-10-07):** 8/8 parity tests green; classifier
+> firmware builds (+228 B flash); host benchmark + rule-grid model card in
+> `reports/`. **No on-device run — no kit available** (see
+> `docs/limitations.md` for the exact pending procedure).
 
 ## Upstream & attribution
 Core framework: [emlearn/emlearn](https://github.com/emlearn/emlearn) (MIT),

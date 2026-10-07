@@ -19,3 +19,4 @@ Desktop.ini
 .vscode/
 # Generated model header (baked at build time by tools/bake_model.py)
 firmware/esp32_sensor_clf/model.h
+reports/bench_tmp/

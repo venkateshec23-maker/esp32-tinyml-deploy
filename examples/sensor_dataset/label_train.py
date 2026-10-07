@@ -45,8 +45,15 @@ def main():
     ap.add_argument('--seed', type=int, default=7)
     args = ap.parse_args()
 
-    data = numpy.loadtxt(args.data, delimiter=',', skiprows=1)
-    X_live = data[:, :2]
+    try:
+        data = numpy.loadtxt(args.data, delimiter=',', skiprows=1)
+        data = numpy.atleast_2d(data)
+    except OSError:
+        data = numpy.zeros((0, 2))
+    if data.shape[0] == 0 or data.shape[1] < 2:
+        X_live = numpy.zeros((0, 2))
+    else:
+        X_live = data[:, :2]
     y_live = numpy.array([rule_label(t, h) for t, h in X_live])
     counts = {int(c): int((y_live == c).sum()) for c in (0, 1, 2)}
     print('live class counts:', counts)

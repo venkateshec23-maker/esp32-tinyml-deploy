@@ -19,7 +19,7 @@ def main():
     ap.add_argument('--model-card', default=None)
     args = ap.parse_args()
 
-    root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     sketch = args.sketch_dir or os.path.join(root, 'firmware', 'esp32_sensor_clf')
     dst = os.path.join(sketch, 'model.h')
     shutil.copyfile(args.model_h, dst)
