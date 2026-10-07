@@ -3,8 +3,8 @@
   "model_h_bytes": 1346,
   "ns_each_mean": null,
   "ns_each_max": null,
+  "latency_verdict": "below host measurement floor (2M inferences in ~0.03s wall; compiler optimizes the micro-loop); ESP32 micros() measurement pending hardware",
   "note": "HOST numbers only; ESP32 numbers require hardware",
-  "latency_verdict": "below host measurement floor: 2M inferences in 0.027s wall (GCC -O2 constant-folds/vectorizes this 2-feature model); per-inference ns NOT trustworthy. ESP32 micros() measurement pending hardware.",
   "firmware_flash_delta_bytes": 228,
   "firmware_flash_total_bytes": 274472,
   "firmware_ram_total_bytes": 22140
